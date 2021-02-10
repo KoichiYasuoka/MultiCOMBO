@@ -5,7 +5,7 @@ URL="https://github.com/KoichiYasuoka/MultiCOMBO"
 
 setuptools.setup(
   name="multicombo",
-  version="0.4.0",
+  version="0.5.0",
   description="Multilingual POS-tagger and Dependency-parser",
   long_description=long_description,
   long_description_content_type="text/markdown",
