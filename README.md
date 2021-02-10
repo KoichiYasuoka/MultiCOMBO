@@ -1,8 +1,8 @@
 [![Current PyPI packages](https://badge.fury.io/py/multicombo.svg)](https://pypi.org/project/multicombo/)
 
-# GuwenCOMBO
+# MultiCOMBO
 
-Tokenizer, POS-Tagger, and Dependency-Parser for Classical Chinese Texts (漢文/文言文), working with [COMBO-pytorch](https://gitlab.clarin-pl.eu/syntactic-tools/combo).
+Multilingual POS-Tagger and Dependency-Parser with [COMBO-pytorch](https://gitlab.clarin-pl.eu/syntactic-tools/combo) and [spaCy](https://spacy.io).
 
 ## Basic usage
 
