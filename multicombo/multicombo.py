@@ -37,6 +37,7 @@ class MultiComboParser(object):
       except:
         s=-1
       if s<0:
+        from unidic_combo import download
         download(MODEL_URL,m,DOWNLOAD_DIR)
       multicombo_parser=unidic_combo.predict.COMBO.from_pretrained(f)
     self.parser=multicombo_parser
