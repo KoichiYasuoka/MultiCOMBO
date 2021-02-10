@@ -86,6 +86,12 @@ def load_spacy(lang):
     exec("q=p."+locals()["p"].__all__[0])
     return locals()["q"]()
   except:
+    if lang=="lzh":
+      from spacy.lang.zh import Chinese
+      if not SPACY_V3:
+        from spacy.lang.zh import ChineseDefaults
+        ChineseDefaults.use_jieba=False
+      return Chinese()
     from spacy.lang.xx import MultiLanguage
     return MultiLanguage()
 
