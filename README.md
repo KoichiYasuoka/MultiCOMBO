@@ -49,3 +49,11 @@ http://127.0.0.1:5000
 pip3 install multicombo --user
 ```
 
+# Installation for Jupyter Notebook (Google Colaboratory)
+
+```py
+!pip install multicombo
+```
+
+Try [notebook](https://colab.research.google.com/github/KoichiYasuoka/MultiCOMBO/blob/main/multicombo.ipynb) for Google Colaboratory.
+
