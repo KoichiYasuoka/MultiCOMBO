@@ -49,6 +49,13 @@ http://127.0.0.1:5000
 pip3 install multicombo --user
 ```
 
+## Installation for Cygwin64
+
+Make sure to get `python37-devel` `python37-pip` `python37-cython` `python37-numpy` `python37-cffi` `gcc-g++` `mingw64-x86_64-gcc-g++` `gcc-fortran` `git` `curl` `make` `cmake` `libopenblas` `liblapack-devel` `libhdf5-devel` `libfreetype-devel` `libuv-devel` packages, and then:
+```sh
+curl -L https://raw.githubusercontent.com/KoichiYasuoka/MultiCOMBO/main/cygwin64.sh | sh
+```
+
 ## Installation for Jupyter Notebook (Google Colaboratory)
 
 ```py
