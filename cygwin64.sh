@@ -19,7 +19,7 @@ case "$F" in
 *) echo $F not installed >&2
    exit 2 ;;
 esac
-ALLENNLP_VERSION=1.4.1
+ALLENNLP_VERSION=1.3.0
 TOKENIZERS_VERSION=0.9.4
 export ALLENNLP_VERSION TOKENIZERS_VERSION
 pip3.7 install 'torch>=1.6.0' -f https://github.com/KoichiYasuoka/CygTorch
