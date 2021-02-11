@@ -53,7 +53,8 @@ pip3 install multicombo --user
 
 Make sure to get `python37-devel` `python37-pip` `python37-cython` `python37-numpy` `python37-cffi` `gcc-g++` `mingw64-x86_64-gcc-g++` `gcc-fortran` `git` `curl` `make` `cmake` `libopenblas` `liblapack-devel` `libhdf5-devel` `libfreetype-devel` `libuv-devel` packages, and then:
 ```sh
-curl -L https://raw.githubusercontent.com/KoichiYasuoka/MultiCOMBO/main/cygwin64.sh | sh
+curl -L https://raw.githubusercontent.com/KoichiYasuoka/UniDic-COMBO/master/cygwin64.sh | sh
+pip3.7 install multicombo
 ```
 
 ## Installation for Jupyter Notebook (Google Colaboratory)
