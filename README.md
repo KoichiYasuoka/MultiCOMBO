@@ -49,7 +49,7 @@ http://127.0.0.1:5000
 pip3 install multicombo --user
 ```
 
-# Installation for Jupyter Notebook (Google Colaboratory)
+## Installation for Jupyter Notebook (Google Colaboratory)
 
 ```py
 !pip install multicombo
