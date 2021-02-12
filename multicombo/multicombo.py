@@ -2,7 +2,7 @@
 # coding=utf-8
 
 import os,numpy
-from spacy.symbols import LEMMA,POS,DEP,HEAD
+from spacy.symbols import POS,DEP,HEAD
 from spacy.tokens import Doc
 from spacy.language import Language
 
@@ -50,7 +50,6 @@ class MultiComboParser(object):
     u=self.parser(u)
     vs=self.vocab.strings
     r=vs.add("ROOT")
-    lemmas=[]
     pos=[]
     morphs=[]
     heads=[]
@@ -60,7 +59,6 @@ class MultiComboParser(object):
         if t.deprel=="root":
           if t.head!=0:
             t.deprel="advcl" if t.head>t.id else "parataxis"
-        lemmas.append(vs.add(t.lemma if t.lemma!=None else t.token))
         pos.append(vs.add(t.upostag))
         morphs.append(t.feats)
         if t.head==0 or t.head==t.id:
@@ -69,8 +67,8 @@ class MultiComboParser(object):
         else:
           heads.append(t.head-t.id)
           deps.append(vs.add(t.deprel))
-    a=numpy.array(list(zip(lemmas,pos,deps,heads)),dtype="uint64")
-    doc.from_array([LEMMA,POS,DEP,HEAD],a)
+    a=numpy.array(list(zip(pos,deps,heads)),dtype="uint64")
+    doc.from_array([POS,DEP,HEAD],a)
     if SPACY_V3:
       for i,j in enumerate(morphs):
         if j!="_" and j!="" and j!=None:
