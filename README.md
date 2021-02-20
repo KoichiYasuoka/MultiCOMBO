@@ -2,7 +2,7 @@
 
 # MultiCOMBO
 
-Multilingual POS-Tagger and Dependency-Parser with [COMBO-pytorch](https://gitlab.clarin-pl.eu/syntactic-tools/combo) and [spaCy](https://spacy.io).
+Multilingual POS-Tagger and Dependency-Parser with [COMBO-pytorch](https://gitlab.clarin-pl.eu/syntactic-tools/combo) and [spaCy](https://spacy.io)
 
 ## Basic usage
 
@@ -12,15 +12,15 @@ Multilingual POS-Tagger and Dependency-Parser with [COMBO-pytorch](https://gitla
 >>> doc=nlp('Who plays "La vie en rose"?')
 >>> print(multicombo.to_conllu(doc))
 # text = Who plays "La vie en rose"?
-1	Who	who	PRON		PronType=Int	2	nsubj	_	Translit=who
-2	plays	play	VERB		Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	"	"	PUNCT		_	5	punct	_	SpaceAfter=No
-4	La	le	DET		Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	Translit=la
-5	vie	vie	NOUN		Gender=Fem|Number=Sing	2	obj	_	_
-6	en	en	ADP		_	7	case	_	_
-7	rose	rose	NOUN		Number=Sing	5	nmod	_	SpaceAfter=No
-8	"	"'	PUNCT		_	5	punct	_	SpaceAfter=No
-9	?	?	PUNCT		_	2	punct	_	SpaceAfter=No
+1	Who	_	PRON	_	PronType=Int	2	nsubj	_	Translit=who
+2	plays	_	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	"	_	PUNCT	_	_	5	punct	_	SpaceAfter=No
+4	La	_	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	5	det	_	Translit=la
+5	vie	_	NOUN	_	Gender=Fem|Number=Sing	2	obj	_	_
+6	en	_	ADP	_	_	7	case	_	_
+7	rose	_	NOUN	_	Number=Sing	5	nmod	_	SpaceAfter=No
+8	"	_	PUNCT	_	_	5	punct	_	SpaceAfter=No
+9	?	_	PUNCT	_	_	2	punct	_	SpaceAfter=No
 
 >>> import deplacy
 >>> deplacy.render(doc)
