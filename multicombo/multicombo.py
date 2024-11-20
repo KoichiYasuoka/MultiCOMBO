@@ -63,7 +63,8 @@ class MultiComboParser(object):
           heads.append(0)
           deps.append(r)
         else:
-          heads.append(t.head-t.id)
+          h=t.head-t.id
+          heads.append(2**64+h if h<0 else h)
           deps.append(vs.add(t.deprel))
     a=numpy.array(list(zip(pos,deps,heads)),dtype="uint64")
     doc.from_array([POS,DEP,HEAD],a)
