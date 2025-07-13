@@ -46,7 +46,9 @@ http://127.0.0.1:5000
 ## Installation for Linux
 
 ```sh
-pip3 install multicombo --user
+pip3 install allennlp@git+https://github.com/allenai/allennlp
+pip3 install 'transformers<4.31'
+pip3 install multicombo
 ```
 
 ## Installation for Cygwin64
@@ -59,9 +61,5 @@ pip3.7 install multicombo
 
 ## Installation for Jupyter Notebook (Google Colaboratory)
 
-```py
-!pip install multicombo
-```
-
-Try [notebook](https://colab.research.google.com/github/KoichiYasuoka/MultiCOMBO/blob/main/multicombo.ipynb) for Google Colaboratory.
+Try [notebook](https://colab.research.google.com/github/KoichiYasuoka/MultiCOMBO/blob/main/multicombo.ipynb).
 
