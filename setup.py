@@ -5,7 +5,7 @@ URL="https://github.com/KoichiYasuoka/MultiCOMBO"
 
 setuptools.setup(
   name="multicombo",
-  version="0.8.6",
+  version="0.8.7",
   description="Multilingual POS-tagger and Dependency-parser",
   long_description=long_description,
   long_description_content_type="text/markdown",
@@ -15,7 +15,7 @@ setuptools.setup(
   license="GPL",
   keywords="NLP Multilingual",
   packages=setuptools.find_packages(),
-  install_requires=["unidic_combo>=1.5.2"],
+  install_requires=["unidic_combo>=1.5.4"],
   python_requires=">=3.6",
   package_data={"multicombo":["download/*.txt"]},
   classifiers=[
